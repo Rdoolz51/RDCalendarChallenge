@@ -7,7 +7,7 @@ var checkTime = setInterval(function () {
     currentTime = moment().format('LLLL');
     dayEl.textContent = currentTime;
     setColor();
-},1000);
+}, 1000);
 //converts time to 24hour time to make comparisons easier.
 var timeTester = moment().format("HH");
 setColor();
@@ -52,7 +52,7 @@ $("#17 .event").val(localStorage.getItem("17"));
 $(".saveBtn").on("click", function () {
     var time = $(this).siblings(".event").attr("id");
     var event = $(this).siblings(".event").val();
-    localStorage.setItem(time,event);
+    localStorage.setItem(time, event);
 });
 
 //optional code to save events to localstorage when the user clicks outside of the textarea.
